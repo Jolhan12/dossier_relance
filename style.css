@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    background-color: #d5d5d5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 1000px; /* Augmente la largeur maximale du formulaire */
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+textarea,
+select,
+input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 3px solid #666;
+    border-radius: 7px;
+    box-sizing: border-box;
+}
+
+input[type="file"] {
+    background-color: #fff; /* Fond blanc pour les champs de téléchargement de fichiers */
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #666;
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #666;
+}
+
+.section {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Section foncée */
+.dark-section {
+    background-color: #333;
+    color: #333;
+}
+
+.tab {
+    display: none;
+}
+
+.tab.active {
+    display: block;
+}
+
+.tab-buttons {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.tab-buttons button {
+    flex: 1;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #666;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    border-radius: 12px; /* Coins arrondis */
+    margin: 0 5px; /* Espace entre les onglets */
+}
+
+.tab-buttons button:hover {
+    background-color: #ddd;
+}
+
+.tab-buttons button.active {
+    background-color: #fff;
+    border-bottom: 1px solid #666;
+}
+
+.sub-tab-buttons {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.sub-tab-buttons button {
+    flex: 1;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f4f4f4;
+    border: 1px solid #666;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    border-radius: 12px; /* Coins arrondis */
+    margin: 0 5px; /* Espace entre les sous-onglets */
+}
+
+.sub-tab-buttons button:hover {
+    background-color: #ddd;
+}
+
+.sub-tab-buttons button.active {
+    background-color: #fff;
+    border-bottom: 1px solid #666;
+}
+
+.form-columns {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.form-column {
+    flex: 1;
+    min-width: 300px;
+}
